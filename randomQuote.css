@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
 body {
   background-color: rgb(39, 174, 96);
 }
@@ -44,8 +49,4 @@ button {
   width: 80%;
   text-align: right;
   display: inline-block;
-}
-
-#randomQuote {
-
 }

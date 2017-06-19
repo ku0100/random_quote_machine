@@ -13,3 +13,11 @@ function getQuote() {
     document.getElementById("quoteAuthor").innerHTML = "-" + quoteAuthor;
   })
 };
+
+$(document).ready(function() {
+  getQuote();
+  $('#randomQuote').on('click', getQuote);
+  $('#tweetQuote').on('click', function() {
+    window.open('https://twitter.com/intent/tweet?text=' + document.getElementById("quoteText").innerHTML + "\n" + "-" + document.getElementById("quoteAuthor").innerHTML);
+  });
+});
